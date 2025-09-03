@@ -13,6 +13,11 @@ cacheKey: '{{ checksum "pom.xml" }}'
 cacheDirectories:
   - .m2
 
+env:
+  Variable_1: ${variable_key1}
+  Variable_2: ${variable_key2}
+  Variable_3: ${variable_key3}
+
 pre:
   - mvn -Dmaven.repo.local=./.m2 dependency:resolve
 

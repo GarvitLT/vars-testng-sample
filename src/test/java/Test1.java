@@ -77,6 +77,10 @@ public class Test1
         driver.get(testURL);
         Thread.sleep(5000);
 
+        System.out.println("Adding Variable 1 " + System.getenv("Variable_1"));
+        System.out.println("Adding Variable 2 " + System.getenv("Variable_2"));
+        System.out.println("Adding Variable 3 " + System.getenv("Variable_3"));
+
         test1.log(Status.PASS, "URL is opened");
         WebDriverWait wait = new WebDriverWait(driver, 5);
         test1.log(Status.PASS, "Wait created");
