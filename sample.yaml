@@ -13,7 +13,7 @@ cacheKey: '{{ checksum "pom.xml" }}'
 cacheDirectories:
   - .m2
 
-env:
+vars:
   Variable_1: ${variable_key1}
   Variable_2: ${variable_key2}
   Variable_3: ${variable_key3}
