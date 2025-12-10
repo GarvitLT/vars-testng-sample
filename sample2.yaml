@@ -13,11 +13,10 @@ cacheKey: '{{ checksum "pom.xml" }}'
 cacheDirectories:
   - .m2
 
-env:
-  Variable_1: ${hyperexecute}
-  Variable_2: ${mobile}
-  Variable_3: ${cbt}
 
+project:
+  name: Rerun Failed Scenarios
+  id: 01KC45YQ3HAGMDBYEWC6GQPX3B
 
 pre:
   - mvn -Dmaven.repo.local=./.m2 dependency:resolve
